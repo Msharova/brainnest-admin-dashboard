@@ -1,4 +1,84 @@
 section.header {
     grid-area: header;
     height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+section.header svg {
+    fill: black;
+}
+div.top-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+}
+div.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    grid-template-rows: 0.2fr;
+}
+div.search-bar label {
+    margin: 0 auto;
+    padding: 5px;
+}
+div.search-bar input {
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+}
+div.username  {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-gap: 20px
+}
+div.username img,
+div.username svg,
+div.username p {
+    margin: auto;
+}
+div.username p {
+    font-weight: 900;
+}
+div.username img {
+    width: 45px;
+}
+div.bottom-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 25px;
+    padding-left: 45px;
+}
+div.welcome-and-info {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+div.welcome-and-info img {
+    width: 70px;
+    margin: auto 0;
+}
+div.info {
+    font-weight: 900;
+    margin: auto 0;
+    line-height: 1.4;
+}
+div.info p,
+div.info h2 {
+    margin: 0;
+}
+div.cta-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 210px;
+}
+div.cta-buttons button{
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: auto;
+    padding: 10px 29px;
 }

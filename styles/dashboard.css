@@ -10,6 +10,7 @@ div.projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
+
 }
 div.project {
     background-color: white;
@@ -25,13 +26,13 @@ p.project-description {
     max-width: 400px;
     margin-top: 5px;
 }
-div.project-action-icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 div.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
 }
 div.dashboard-right-section {
     display: grid;

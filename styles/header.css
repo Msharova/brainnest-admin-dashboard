@@ -1,0 +1,4 @@
+section.header {
+    grid-area: header;
+    height: 200px;
+}

@@ -10,7 +10,8 @@ section.header svg {
 div.top-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 25px;
+    padding: 25px 25px 25px 45px;
+    align-items: center;
 }
 div.search-bar {
     display: grid;
@@ -53,6 +54,7 @@ div.bottom-header {
 div.welcome-and-info {
     display: grid;
     grid-template-columns: 1fr 7fr;
+    gap: 1rem;
 }
 div.welcome-and-info img {
     width: 70px;

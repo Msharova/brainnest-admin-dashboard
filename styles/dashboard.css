@@ -57,3 +57,25 @@ div.announcement p {
 #announcement-last-child {
     border: none;
 }
+div.trending-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+}
+div.trending-container img {
+    width: 45px;
+    margin: auto;
+}
+div.trend {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+p.trend-username {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+p.trend-caption {
+    font-weight: 500;
+    opacity: 0.4;
+    margin-top: 3px;
+}

@@ -70,9 +70,7 @@ div.info h2 {
     margin: 0;
 }
 div.cta-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 210px;
+    display: flex;
 }
 div.cta-buttons button{
     background-color: #1992d4;
@@ -83,4 +81,10 @@ div.cta-buttons button{
     font-weight: 500;
     margin: auto;
     padding: 10px 29px;
+}
+
+.cta-buttons button:hover{
+    background-color: #3e9dd0;
+    cursor: pointer;
+
 }

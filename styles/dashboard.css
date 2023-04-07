@@ -2,6 +2,7 @@ section.dashboard {
     padding: 25px;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: #92a1c2;
 }
 div.dashboard-main-section {
     padding-right: 25px;
@@ -19,6 +20,15 @@ div.project {
     border-radius: 5px;
     border-left: 10px solid var(--orange);
 }
+div.project:hover {
+    transform: scale(1.05);
+    transition: all 200ms ease-in-out;
+}
+div.icons svg:hover {
+    transform: scale(1.5);
+    transition: all 200ms ease-in-out;
+    fill: var(--orange);
+}
 h3 {
     color: var(--white);
 }
@@ -35,8 +45,6 @@ div.icons {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
 }
 div.dashboard-right-section {
     display: grid;
@@ -50,6 +58,9 @@ div.dashboard-right-section {
 }
 div.announcement {
     border-bottom: 1px solid #d2d2d2;
+}
+div.announcement:hover {
+    cursor: pointer;
 }
 div.announcement h5 {
     font-size: 15px;

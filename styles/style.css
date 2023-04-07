@@ -1,8 +1,10 @@
 :root {
     --orange: #FCA311;
+    --orange-accent: #f8bf63;
     --white: #ffffff;
     --black: #000;
-    --bg-main: rgb(20, 33, 61);
+    --bg-main: #14213d;
+    --bg-main-accent:  #3d4d70;
 }
 
 body {
@@ -15,11 +17,12 @@ img {
     width: 100px;
 }
 svg {
-    fill: white;
-    width: 22px;
+    fill: var(--white);
+       width: 22px;
 }
+
 .icons svg {
-    fill: black;
+    fill: var(--black); 
 }
 
 .svg-favourite {
@@ -37,5 +40,5 @@ main.container {
 }
 section.dashboard {
     grid-area: main;
-    background-color: #e2e8f0;
+    background-color: var(--bg-main);
 }

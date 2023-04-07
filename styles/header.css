@@ -3,8 +3,8 @@ section.header {
     height: 200px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: var(--bg-main);
-    color: var(--white);
+    background-color: #fab341;
+    color: var(--bg-main);
 }
 section.header svg {
     fill: var(--white);
@@ -41,6 +41,11 @@ div.username svg,
 div.username p {
     margin: auto;
 }
+div.username svg:hover {
+    transform: scale(1.5);
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
 div.username p {
     font-weight: 900;
 }
@@ -75,9 +80,9 @@ div.cta-buttons {
     display: flex;
 }
 div.cta-buttons button{
-    background-color: var(--orange);
-    color: var(--black);
-    border: none;
+    background-color: var(--bg-main);
+    color: var(--white);
+    border: 1px solid transparent;
     border-radius: 25px;
     font-size: 15px;
     font-weight: 500;
@@ -86,7 +91,10 @@ div.cta-buttons button{
 }
 
 .cta-buttons button:hover{
-    background-color: var(--orange-accent);
+    background-color: var(--white);
+    color: var(--bg-main);
+    border: 1px solid var(--bg-main);
+    transition: all 150ms ease-in-out;
     cursor: pointer;
 
 }

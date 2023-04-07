@@ -3,9 +3,11 @@ section.header {
     height: 200px;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--bg-main);
+    color: var(--white);
 }
 section.header svg {
-    fill: black;
+    fill: var(--white);
 }
 div.top-header {
     display: grid;
@@ -73,8 +75,8 @@ div.cta-buttons {
     display: flex;
 }
 div.cta-buttons button{
-    background-color: #1992d4;
-    color: white;
+    background-color: var(--orange);
+    color: var(--black);
     border: none;
     border-radius: 25px;
     font-size: 15px;
@@ -84,7 +86,7 @@ div.cta-buttons button{
 }
 
 .cta-buttons button:hover{
-    background-color: #3e9dd0;
+    background-color: var(--orange-accent);
     cursor: pointer;
 
 }

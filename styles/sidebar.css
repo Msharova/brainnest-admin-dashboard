@@ -1,6 +1,5 @@
 main section.side-bar {
     grid-area: sidebar;
-    height: 100%;
     background-color: #1992d4;
     color: white;
     padding: 15px;

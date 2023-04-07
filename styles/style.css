@@ -11,10 +11,14 @@ svg {
     fill: white;
     width: 22px;
 }
-
 .icons svg {
     fill: black;
 }
+
+.svg-favourite {
+    transform: rotate(270deg);
+}
+
 main.container {
     height: 100vh;
     display: grid;

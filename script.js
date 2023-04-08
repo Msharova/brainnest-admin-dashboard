@@ -1,1 +1,1 @@
-// JAvaScript 
+// JavaScript

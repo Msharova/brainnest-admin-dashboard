@@ -3,29 +3,41 @@ section.dashboard {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: #92a1c2;
+    z-index: 0;
 }
 div.dashboard-main-section {
     padding-right: 25px;
+    display: flex;
+    flex-direction: column;
 }
 div.projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-
+    grid-template-rows: repeat(3, 1fr);
+    flex: 1 1 auto;
 }
 div.project {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: white;
     padding: 35px;
     border: none;
     border-radius: 5px;
     border-left: 10px solid var(--orange);
+    transition: all 200ms ease-in-out;
 }
 div.project:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transition: all 200ms ease-in-out;
+}
+
+div.icons svg {
     transition: all 200ms ease-in-out;
 }
 div.icons svg:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: all 200ms ease-in-out;
     fill: var(--orange);
 }
@@ -37,7 +49,6 @@ div.project h4 {
     margin:0;
 }
 p.project-description {
-    max-width: 400px;
     margin-top: 5px;
 }
 
@@ -49,13 +60,28 @@ div.icons {
 div.dashboard-right-section {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 .card {
     background-color: white;
     padding: 35px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+div.announcements,
+div.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+div.announcement-container {
+    flex: 1 1 auto;
+    margin-bottom: 30px;
+    display: grid;
+    align-content: stretch;
+}
+
 div.announcement {
     border-bottom: 1px solid #d2d2d2;
 }
@@ -74,7 +100,9 @@ div.announcement p {
 #announcement-last-child {
     border: none;
 }
+
 div.trending-container {
+    flex: 1 1 auto;
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 0;
@@ -86,6 +114,7 @@ div.trending-container img {
 div.trend {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
 p.trend-username {
     font-weight: 600;
